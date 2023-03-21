@@ -1,7 +1,13 @@
-.img {
-    margin-left: auto;
+.table {
+    background-color: white;
 }
 
-body {
-     background-color: #3b5998;
- }
+.table thead {
+    background-color: #3b5998;
+    color: white;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
