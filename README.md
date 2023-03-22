@@ -29,15 +29,30 @@ pip install -r requirements.txt
 ```
 ## Usage 
 1. Ensure all the necessary libraries and dependencies are installed. You can refer to the `Installation` section in the README for guidance.
+
 2. Navigate to the root directory of the project.
+
 3. Run the app.py file using the command: 
 ```python
-python app.py.
+python app.py
 ```
+
 6. Open your web browser and navigate to http://127.0.0.1:5000 to view the home page of the web application.
+
 7. From the home page, you can navigate to the different pages to explore the data, model, and results of the project.
+
 8. On the `Data` page, you can view the raw data and the visualizations of the time series data.
+
 9. On the `Model` page, you can view the training and validation results of the Prophet model.
+
 10. On the `Results` page, you can view the forecasted values of the time series data.
+
 11. To interact with the web application, you can use the navigation bar at the top of the page to move between the different pages.
+
 12. If you want to stop the server, press `CTRL+C` in the terminal where the `app.py` script is running.
+## Data Preparation
+The data preparation phase is a critical step in any machine learning project. It involves cleaning and transforming the raw data into a format that can be used by the machine learning algorithms. In this project, the data preparation phase involves reading the raw data from a CSV file, changing the date column to datetime format, splitting the data into training and testing sets, and saving the processed data to separate CSV files.
+
+To accomplish this, the Pandas library is used to read the CSV file and create a DataFrame. The date column is then converted to a datetime format using the `pd.to_datetime function`. The data is then split into training and testing sets using the `train_end_date` variable, which represents the end of the training data. The training and testing data are saved to separate CSV files in the `processed_data` folder.
+
+By the end of this phase, the data is clean, formatted correctly, and ready for the machine learning phase.
