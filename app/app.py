@@ -142,6 +142,11 @@ def model():
 def results():
     return render_template('results.html')
 
+@app.route('/model_training')
+def model_training():
+    return render_template('model_training.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
