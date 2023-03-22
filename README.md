@@ -56,3 +56,11 @@ The data preparation phase is a critical step in any machine learning project. I
 To accomplish this, the Pandas library is used to read the CSV file and create a DataFrame. The date column is then converted to a datetime format using the `pd.to_datetime function`. The data is then split into training and testing sets using the `train_end_date` variable, which represents the end of the training data. The training and testing data are saved to separate CSV files in the `processed_data` folder.
 
 By the end of this phase, the data is clean, formatted correctly, and ready for the machine learning phase.
+## Forecasting with Prophet
+This section describes the forecasting process using Prophet and Apache Spark. The code was implemented in Databricks, a cloud-based data engineering platform that provides an interactive workspace for data scientists, engineers, and analysts to collaborate on big data projects.
+
+The forecasting process in this project utilizes Facebook Prophet, a time-series forecasting library. The data was first read into a Spark session and aggregated to the daily level. The data was then transformed to a Pandas DataFrame to use in Prophet.
+
+The Prophet model was fitted to the historical data using the Prophet library's built-in functions. The Prophet model was then used to make future forecasts.
+
+The metrics for evaluating the model were calculated using the mean absolute error (MAE), mean squared error (MSE), root mean squared error (RMSE), and mean absolute percentage error (MAPE). These metrics were calculated using the actual and predicted values of the historical data.
