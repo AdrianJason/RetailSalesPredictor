@@ -110,6 +110,21 @@ def weekday_sales():
         return jsonify(data)
     finally:
         session.close()
+        
+@app.route('/api/v1.0/store_sales')
+def store_sales():
+    session = Session()
+    try:
+        # Retrieve the data from the database
+        result_proxy = session.execute(text('SELECT * FROM store_sales'))
+
+        # Convert the result into a list of dictionaries
+        data = [dict(zip(result_proxy.keys(), row)) for row in result_proxy.fetchall()]
+
+        # jsonify the data
+        return jsonify(data)
+    finally:
+        session.close()
 
 @app.route('/')
 def home():
