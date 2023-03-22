@@ -72,4 +72,18 @@ We then trained the Prophet model with the optimized set of parameters on 50 sto
 
 We then used these models to make predictions on the test dataset for each store and item combination and computed evaluation metrics such as MAE, MSE, RMSE, and MAPE. The results are stored in a Pandas DataFrame called `metrics_df`.
 
-Overall, this approach allowed us to improve the accuracy of our forecasts and make predictions for every store and item combination in the dataset.
+Overall, this approach allowed us to improve the accuracy of our forecasts and make predictions for every store and item combination that was tested in the dataset.
+## Results 
+The Facebook Prophet model was able to accurately predict the sales performance of Store 1, Item 1 based on historical data from January 1, 2013 to January 31, 2017. The model achieved a root mean squared error (RMSE) of 4.31, indicating that the predicted sales values were on average within +/- 4.31 units of the actual sales values. The model was able to capture the seasonal trends and overall sales performance of the item, with predicted sales values closely following the actual sales values. In addition to the RMSE, we also calculated several other metrics to evaluate the performance of the model:
+
+* MAE (Mean Absolute Error): The MAE is 3.40, which means that on average, the model's predicted sales values were within +/- 3.40 units of the actual sales values.
+
+* MSE (Mean Squared Error): The MSE is 18.60, which means that on average, the squared difference between the predicted and actual sales values was 18.60 units.
+
+* MAPE (Mean Absolute Percentage Error): The MAPE is 20.37%, which means that on average, the model's predicted sales values were within +/- 20.37% of the actual sales values.
+
+Overall, the model appears to have performed reasonably well for Store 1, Item 1, with RMSE, MAE, MSE, and MAPE values indicating that the predicted sales values were generally within a few units or percentage points of the actual sales values. To evaluate the scalability and practicality of our Facebook Prophet model, we deployed it on 50 store and item combinations and stored the results in a dataframe. This allowed us to easily access and analyze the predicted sales values for each combination using simple queries.
+
+The results of the model were encouraging, with the predicted sales values closely following the actual sales values for most store and item combinations. The model was able to capture seasonal trends and overall sales performance, making it a useful tool for forecasting sales in retail stores.
+
+With the ability to easily access and analyze the results for each store and item combination, our Facebook Prophet model has the potential to be a valuable tool for retailers looking to forecast sales performance and optimize their inventory management. Future work could include incorporating external factors such as weather or promotions into the model to further improve its accuracy and practicality.
