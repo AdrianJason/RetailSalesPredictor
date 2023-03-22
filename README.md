@@ -1,4 +1,6 @@
 # Fine-Grained Time Series Forecasting Prophet and Apache Spark
+<img src="https://github.com/JeremyTallant/RetailSalesPredictor/blob/main/app/static/images/prophetimage.png" alt="Prophet">
+
 This project aims to provide fine-grained time series forecasting using Prophet, a popular time series forecasting library developed by Facebook, and Apache Spark, a powerful distributed data processing framework. The forecasts will be displayed on a web page for easy access and interpretation.
 ## Table of Contents
 1. Overview
