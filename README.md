@@ -99,3 +99,25 @@ Although our pre-trained Facebook Prophet model provides accurate sales forecast
 **User Interface Improvements**: While our web application provides a user-friendly interface for visualizing sales forecasts, there is always room for improvement in terms of usability and design. Future work could involve incorporating feedback from users and incorporating improvements to make the interface even more intuitive and user-friendly.
 
 Overall, there are many exciting directions for future work on this project, and we look forward to continuing to improve and expand upon our current capabilities.
+## File Organization and Structure 
+├── data
+│   ├── store.csv
+│   └── processed_data
+│       ├── train.csv
+│       └── test.csv
+├── notebooks
+│   ├── data_exploration.ipynb
+│   ├── data_preprocessing.ipynb
+│   ├── model_training.dbc
+│   
+├── app
+│   ├── templates
+│   │   ├── home.html
+│   │   └── results.html
+│   ├── static
+│   │   ├── css
+│   │   └── js
+│   └── app.py
+├── README.md
+├── requirements.txt
+└── .gitignore
