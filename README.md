@@ -8,9 +8,10 @@ This project aims to provide fine-grained time series forecasting using Prophet,
 3. Usage
 4. Data Preparation
 5. Forecasting with Prophet
-6. Results
-7. Web Application
-8. File Organization and Structure
+6. Hyperparameter Tuning and Model Training on All Store-Item Combinations
+7. Results
+8. Web Application
+9. File Organization and Structure
 ## Overview
 The primary goal of this project is to develop a scalable and efficient time series forecasting solution by leveraging the capabilities of the Prophet library and Apache Spark. The project will involve data preparation, model training, forecasting, and visualization. The web application will display the data, the model, and the forecast results on a single webpage for easy access and interpretation.
 ## Installation
@@ -64,3 +65,11 @@ The forecasting process in this project utilizes Facebook Prophet, a time-series
 The Prophet model was fitted to the historical data using the Prophet library's built-in functions. The Prophet model was then used to make future forecasts.
 
 The metrics for evaluating the model were calculated using the mean absolute error (MAE), mean squared error (MSE), root mean squared error (RMSE), and mean absolute percentage error (MAPE). These metrics were calculated using the actual and predicted values of the historical data.
+## Hyperparameter Tuning and Model Training on All Store-Item Combinations
+To improve the accuracy of our forecasts, we performed hyperparameter tuning on the Prophet model using a grid search approach. We tested various combinations of parameters such as `changepoint_prior_scale`, `holidays_prior_scale`, `n_changepoints`, and `seasonality_mode` on a subset of the data. After analyzing the results, we selected the best set of parameters based on the Mean Absolute Percentage Error (MAPE) metric.
+
+We then trained the Prophet model with the optimized set of parameters on every store and item combination using the entire training dataset. The resulting models were stored in a dictionary with a tuple key of `(store, item)` for easy access.
+
+We then used these models to make predictions on the test dataset for each store and item combination and computed evaluation metrics such as MAE, MSE, RMSE, and MAPE. The results are stored in a Pandas DataFrame called `metrics_df`.
+
+Overall, this approach allowed us to improve the accuracy of our forecasts and make predictions for every store and item combination in the dataset.
