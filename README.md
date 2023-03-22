@@ -10,7 +10,7 @@ This project aims to provide fine-grained time series forecasting using Prophet,
 5. Forecasting with Prophet
 6. Hyperparameter Tuning and Model Training on All Store-Item Combinations
 7. Results
-8. Web Application
+8. Future Work
 9. File Organization and Structure
 ## Overview
 The primary goal of this project is to develop a scalable and efficient time series forecasting solution by leveraging the capabilities of the Prophet library and Apache Spark. The project will involve data preparation, model training, forecasting, and visualization. The web application will display the data, the model, and the forecast results on a single webpage for easy access and interpretation.
@@ -87,3 +87,15 @@ Overall, the model appears to have performed reasonably well for Store 1, Item 1
 The results of the model were encouraging, with the predicted sales values closely following the actual sales values for most store and item combinations. The model was able to capture seasonal trends and overall sales performance, making it a useful tool for forecasting sales in retail stores.
 
 With the ability to easily access and analyze the results for each store and item combination, our Facebook Prophet model has the potential to be a valuable tool for retailers looking to forecast sales performance and optimize their inventory management. Future work could include incorporating external factors such as weather or promotions into the model to further improve its accuracy and practicality.
+## Future Work
+Although our pre-trained Facebook Prophet model provides accurate sales forecasts for a range of store and item combinations, there is still room for further improvement and development. Here are a few potential areas for future work:
+
+**Dynamic Updating**: Currently, our model is trained on historical sales data and is not updated in real-time. A possible improvement could be to build a mechanism to dynamically update the model as new sales data becomes available. This could help ensure that the forecasts remain accurate and up-to-date.
+
+**Integration with Inventory Management Systems**: Our web application currently provides retailers with sales forecasts, but it does not include recommendations for inventory management. An interesting area for future work could be to integrate our forecasts with inventory management systems to provide retailers with real-time recommendations for optimal inventory levels.
+
+**Expansion of Model Capabilities**: While our pre-trained model is effective at forecasting sales trends and handling missing data, there may be other factors that impact sales performance that are not currently accounted for in the model. Future work could involve expanding the model to include additional factors such as marketing campaigns, seasonal trends, or external events.
+
+**User Interface Improvements**: While our web application provides a user-friendly interface for visualizing sales forecasts, there is always room for improvement in terms of usability and design. Future work could involve incorporating feedback from users and incorporating improvements to make the interface even more intuitive and user-friendly.
+
+Overall, there are many exciting directions for future work on this project, and we look forward to continuing to improve and expand upon our current capabilities.
