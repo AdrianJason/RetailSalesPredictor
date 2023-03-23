@@ -39,13 +39,21 @@ python app.py
 
 6. Open your web browser and navigate to http://127.0.0.1:5000 to view the home page of the web application.
 
+<img width="1440" alt="Screenshot 2023-03-22 at 9 25 58 PM" src="https://user-images.githubusercontent.com/112406455/227085127-de2967de-45da-4c50-a973-7029053cffbc.png">
+
 7. From the home page, you can navigate to the different pages to explore the data, model, and results of the project.
 
 8. On the `Data` page, you can view the raw data and the visualizations of the time series data.
 
+<img width="1440" alt="Screenshot 2023-03-22 at 9 26 15 PM" src="https://user-images.githubusercontent.com/112406455/227085406-7b6a6b92-4d80-477e-a426-0e36b0e0ea8b.png">
+
 9. On the `Model` page, you can view the training and validation results of the Prophet model.
 
+<img width="1438" alt="Screenshot 2023-03-22 at 9 26 39 PM" src="https://user-images.githubusercontent.com/112406455/227085620-7414c2fc-35c4-4309-b6bc-591617285681.png">
+
 10. On the `Results` page, you can view the forecasted values of the time series data.
+
+<img width="1439" alt="Screenshot 2023-03-22 at 9 26 47 PM" src="https://user-images.githubusercontent.com/112406455/227085697-834047dc-d71f-4521-b7c5-ebc060231057.png">
 
 11. To interact with the web application, you can use the navigation bar at the top of the page to move between the different pages.
 
