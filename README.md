@@ -49,7 +49,7 @@ python app.py
 
 9. On the `Model` page, you can view the training and validation results of the Prophet model.
 
-<img width="1438" alt="Screenshot 2023-03-22 at 9 26 39 PM" src="https://user-images.githubusercontent.com/112406455/227085620-7414c2fc-35c4-4309-b6bc-591617285681.png">
+<img width="1439" alt="Screenshot 2023-03-25 at 8 01 34 PM" src="https://user-images.githubusercontent.com/112406455/227749625-e14fe379-2a8b-4855-9364-ff0e6c0a704a.png">
 
 10. On the `Results` page, you can view the forecasted values of the time series data.
 
