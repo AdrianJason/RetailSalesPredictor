@@ -65,7 +65,7 @@ To accomplish this, the Pandas library is used to read the CSV file and create a
 
 By the end of this phase, the data is clean, formatted correctly, and ready for the machine learning phase.
 ## Forecasting with Prophet
-This section describes the forecasting process using Prophet and Apache Spark. The code was implemented in Databricks, a cloud-based data engineering platform that provides an interactive workspace for data scientists, engineers, and analysts to collaborate on big data projects. To view the model implemented in Databricks, click <a href="https://jeremytallant.github.io/model_training/" target="_blank">here</a>.
+This section describes the forecasting process using Prophet and Apache Spark. The code was implemented in Databricks, a cloud-based data engineering platform that provides an interactive workspace for data scientists, engineers, and analysts to collaborate on big data projects.
 
 The forecasting process in this project utilizes Facebook Prophet, a time-series forecasting library. The data was first read into a Spark session and aggregated to the daily level. The data was then transformed to a Pandas DataFrame to use in Prophet.
 
