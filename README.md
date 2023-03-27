@@ -51,9 +51,9 @@ python app.py
 
 <img width="1439" alt="Screenshot 2023-03-25 at 8 01 34 PM" src="https://user-images.githubusercontent.com/112406455/227749625-e14fe379-2a8b-4855-9364-ff0e6c0a704a.png">
 
-10. On the `Results` page, you can view the forecasted values of the time series data.
+10. On the `Results` page, you can view both the predicted and actual values of the time series test data in a chart, along with a table that displays the evaluation metrics for the selected store and item combination.
 
-<img width="1439" alt="Screenshot 2023-03-22 at 9 26 47 PM" src="https://user-images.githubusercontent.com/112406455/227085697-834047dc-d71f-4521-b7c5-ebc060231057.png">
+<img width="1439" alt="Screenshot 2023-03-27 at 3 56 23 PM" src="https://user-images.githubusercontent.com/112406455/228065085-c2f0f592-b81e-49d5-a8bf-49b8c589e028.png">
 
 11. To interact with the web application, you can use the navigation bar at the top of the page to move between the different pages.
 
@@ -75,7 +75,7 @@ The metrics for evaluating the model were calculated using the mean absolute err
 ## Hyperparameter Tuning and Model Training on All Store-Item Combinations
 To improve the accuracy of our forecasts, we performed hyperparameter tuning on the Prophet model using a grid search approach. We tested various combinations of parameters such as `changepoint_prior_scale`, `holidays_prior_scale`, `n_changepoints`, and `seasonality_mode` on a subset of the data. After analyzing the results, we selected the best set of parameters based on the Mean Absolute Percentage Error (MAPE) metric.
 
-We then trained the Prophet model with the optimized set of parameters on 50 store and item combinations. The resulting models were stored in a dictionary with a tuple key of `(store, item)` for easy access.
+We then trained the Prophet model with the optimized set of parameters on all store and item combinations. The resulting models were stored in a dictionary with a tuple key of `(store, item)` for easy access.
 
 We then used these models to make predictions on the test dataset for each store and item combination and computed evaluation metrics such as MAE, MSE, RMSE, and MAPE. The results are stored in a Pandas DataFrame called `metrics_df`.
 
@@ -89,7 +89,7 @@ The Facebook Prophet model was able to accurately predict the sales performance 
 
 * MAPE (Mean Absolute Percentage Error): The MAPE is 20.37%, which means that on average, the model's predicted sales values were within +/- 20.37% of the actual sales values.
 
-Overall, the model appears to have performed reasonably well for Store 1, Item 1, with RMSE, MAE, MSE, and MAPE values indicating that the predicted sales values were generally within a few units or percentage points of the actual sales values. To evaluate the scalability and practicality of our Facebook Prophet model, we deployed it on 50 store and item combinations and stored the results in a dataframe. This allowed us to easily access and analyze the predicted sales values for each combination using simple queries.
+Overall, the model appears to have performed reasonably well for Store 1, Item 1, with RMSE, MAE, MSE, and MAPE values indicating that the predicted sales values were generally within a few units or percentage points of the actual sales values. To evaluate the scalability and practicality of our Facebook Prophet model, we deployed it on all store and item combinations and stored the results in a dataframe. This allowed us to easily access and analyze the predicted sales values for each combination using simple queries.
 
 The results of the model were encouraging, with the predicted sales values closely following the actual sales values for most store and item combinations. The model was able to capture seasonal trends and overall sales performance, making it a useful tool for forecasting sales in retail stores.
 
