@@ -80,6 +80,36 @@ def yearly_sales():
         return jsonify(data)
     finally:
         session.close()
+        
+@app.route('/api/v1.0/results')
+def results_new():
+    session = Session()
+    try:
+        # Retrieve the data from the database
+        result_proxy = session.execute(text('SELECT * FROM results'))
+
+        # Convert the result into a list of dictionaries
+        data = [dict(zip(result_proxy.keys(), row)) for row in result_proxy.fetchall()]
+
+        # jsonify the data
+        return jsonify(data)
+    finally:
+        session.close()
+
+@app.route('/api/v1.0/metrics')
+def metrics():
+    session = Session()
+    try:
+        # Retrieve the data from the database
+        result_proxy = session.execute(text('SELECT * FROM metrics'))
+
+        # Convert the result into a list of dictionaries
+        data = [dict(zip(result_proxy.keys(), row)) for row in result_proxy.fetchall()]
+
+        # jsonify the data
+        return jsonify(data)
+    finally:
+        session.close()
 
 @app.route('/api/v1.0/item_sales')
 def item_sales():
