@@ -51,9 +51,9 @@ python app.py
 
 <img width="1439" alt="Screenshot 2023-03-25 at 8 01 34 PM" src="https://user-images.githubusercontent.com/112406455/227749625-e14fe379-2a8b-4855-9364-ff0e6c0a704a.png">
 
-10. On the `Results` page, you can view the forecasted values of the time series data.
+10. On the `Results` page, you can view both the predicted and actual values of the time series test data in a chart, along with a table that displays the evaluation metrics for the selected store and item combination.
 
-<img width="1439" alt="Screenshot 2023-03-22 at 9 26 47 PM" src="https://user-images.githubusercontent.com/112406455/227085697-834047dc-d71f-4521-b7c5-ebc060231057.png">
+<img width="1439" alt="Screenshot 2023-03-27 at 3 56 23 PM" src="https://user-images.githubusercontent.com/112406455/228065085-c2f0f592-b81e-49d5-a8bf-49b8c589e028.png">
 
 11. To interact with the web application, you can use the navigation bar at the top of the page to move between the different pages.
 
