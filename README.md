@@ -11,6 +11,7 @@ This project aims to provide fine-grained time series forecasting using Prophet,
 - [Hyperparameter Tuning and Model Training on All Store-Item Combinations](#hyperparameter-tuning-and-model-training-on-all-store-item-combinations)
 - [Results](#results)
 - [Future Work](#future-work)
+- [File Organization and Structure](#file-organization-and-structure)
 ## Overview
 The primary goal of this project is to develop a scalable and efficient time series forecasting solution by leveraging the capabilities of the Prophet library and Apache Spark. The project will involve data preparation, model training, forecasting, and visualization. The web application will display the data, the model, and the forecast results on a single webpage for easy access and interpretation.
 ## Installation
