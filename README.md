@@ -112,6 +112,6 @@ Overall, there are many exciting directions for future work on this project, and
 * `data/` contains the raw `store.csv` data and processed data, including the `processed_data/` folder with `test_data.csv` and `train_data.csv`.
 * `database/` contains the `model.sql` file with the schema of the database used to store data for rendering in the Flask app.
 *  `notebooks/` contains Jupyter notebooks for data exploration, preprocessing, and model training.
-Note that there are two files for model training: `model_training.ipynb` and `model_training.dbc`. We used a regular Jupyter notebook for `model_training.ipynb` because we were using the free trial version of Databricks and were unable to save the results of the model into a PostgreSQL database using Databricks.
+* **Note** that there are two files for model training: `model_training.ipynb` and `model_training.dbc`. We used a regular Jupyter notebook for `model_training.ipynb` because we were using the free trial version of Databricks and were unable to save the results of the model into a PostgreSQL database using Databricks.
 * `README.md` is the main file containing the documentation and instructions for the project.
 * `requirements.txt` lists the required Python packages and their versions.
