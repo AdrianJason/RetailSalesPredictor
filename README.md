@@ -107,3 +107,10 @@ Although our pre-trained Facebook Prophet model provides accurate sales forecast
 **User Interface Improvements**: While our web application provides a user-friendly interface for visualizing sales forecasts, there is always room for improvement in terms of usability and design. Future work could involve incorporating feedback from users and incorporating improvements to make the interface even more intuitive and user-friendly.
 
 Overall, there are many exciting directions for future work on this project, and we look forward to continuing to improve and expand upon our current capabilities.
+## File Organization and Structure
+* `app/` contains the Flask web application, with static files (`css`, `js`, and `images`) and templates.
+* `data/` contains the raw `store.csv` data and processed data (`processed_data/` folder).
+* `database/` contains the `model.sql` file with the schema of the database used to store data for rendering in the Flask app.
+*  `notebooks/` contains Jupyter notebooks for data exploration, preprocessing, and model training.
+* `README.md` is the main file containing the documentation and instructions for the project.
+* `requirements.txt` lists the required Python packages and their versions.
