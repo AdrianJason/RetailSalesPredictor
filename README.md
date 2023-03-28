@@ -28,6 +28,11 @@ cd RetailSalesPredictor
 ```python
 pip install -r requirements.txt
 ```
+3. Load the database schema from `model.sql` into the PostgreSQL database.
+```python
+pg_restore -U <username> -d <database_name> model.sql.dump
+```
+Here, `<username>` is the username of the PostgreSQL superuser, `<database_name>` is the name of the database you want to restore to, and `model.sql` is the name of the backup file you want to restore from.
 ## Usage 
 1. Ensure all the necessary libraries and dependencies are installed. You can refer to the `Installation` section in the README for guidance.
 
